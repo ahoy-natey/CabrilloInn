@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cabrillo Inn: Your Santa Barbara coastal getaway. Ocean view rooms, modern amenities, and a perfect location for your California vacation." />
+    <title>Cabrillo Inn - Your Coastal Getaway</title>
+    <link rel="icon" type="image/png" href="Images/CBI-Logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#home" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <a href="#" class="logo" aria-label="Cabrillo Inn Home">Cabrillo Inn</a>
+            <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="santa-barbara.html">Santa Barbara</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" tabindex="-1">
+        <div class="hero-content">
+            <div class="hero-text-curve">
+                <h1 class="hero-curve-main">Cabrillo Inn</h1>
+                <div class="hero-curve-sub-wrapper">
+                    <span class="hero-curve-sub">at the Beach</span>
+                </div>
+            </div>
+            <div class="hero-headline">Cabrillo Inn at the Beach</div>
+            <div class="hero-tagline">...your Santa Barbara Hideaway</div>
+            <a href="https://hotels.cloudbeds.com/reservation/cksufF#checkin=2025-07-10&checkout=2025-07-11" class="cta-button">Book Your Stay</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Our Inn</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Nestled along Santa Barbara’s stunning coastline, The Cabrillo Inn at the Beach is your gateway to the California beach life. Our classic motel offers clean, comfortable rooms and a retro vibe that’s as welcoming as the ocean breeze.</p>
+                <p>Whether you’re here for a sun-soaked getaway, a family adventure, or just a good night’s rest on your road trip, you’ll enjoy easy access to the beach, local attractions, and the timeless charm of Santa Barbara.</p>
+                <p>Our friendly staff is here to make your stay relaxed and memorable. Discover why generations of travelers have called The Cabrillo Inn their home by the sea.</p>
+            </div>
+            <button class="about-image-btn" aria-label="View larger image of Cabrillo Inn exterior">
+                <div class="about-image" aria-label="Cabrillo Inn exterior with flowers and palm trees" tabindex="0"></div>
+            </button>
+            <a href="https://hotels.cloudbeds.com/reservation/cksufF#checkin=2025-07-10&checkout=2025-07-11" class="cta-button" target="_blank" rel="noopener">Book Now</a>
+        </div>
+    </section>
+
+    <!-- About Image Modal/Lightbox -->
+    <div id="about-modal" class="amenity-modal" role="dialog" aria-modal="true" aria-labelledby="about-modal-img" tabindex="-1">
+        <span class="amenity-modal-close" id="about-modal-close" tabindex="0" aria-label="Close image">&times;</span>
+        <img class="amenity-modal-img" id="about-modal-img" src="Images/IMG_7735.JPEG" alt="Cabrillo Inn exterior with flowers and palm trees, enlarged for details" />
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <h2>Photo Gallery</h2>
+        <p class="gallery-intro">Take a visual tour of Cabrillo Inn and discover the beauty that awaits you.</p>
+        <div class="gallery-grid">
+            <div class="gallery-item" data-image="Images/IMG_7756.JPEG" aria-label="Cabrillo Inn exterior with ocean view">
+                <div class="gallery-image hero-gallery"></div>
+                <div class="gallery-overlay">
+                    <span class="gallery-caption">The Cabrillo Inn</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="Images/IMG_Garden.JPEG" aria-label="Cabrillo Inn exterior with flowers and palm trees">
+                <div class="gallery-image about-gallery"></div>
+                <div class="gallery-overlay">
+                    <span class="gallery-caption">Garden Entrance</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="Images/IMG_Pool.JPEG" aria-label="Heated pool area">
+                <div class="gallery-image pool-gallery"></div>
+                <div class="gallery-overlay">
+                    <span class="gallery-caption">Heated Pool</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="Images/IMG_7761.JPEG" aria-label="Ocean view from room">
+                <div class="gallery-image ocean-gallery"></div>
+                <div class="gallery-overlay">
+                    <span class="gallery-caption">Room with Ocean View</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="Images/IMG_BikePath.JPEG" aria-label="Santa Barbara coastline">
+                <div class="gallery-image sb-gallery"></div>
+                <div class="gallery-overlay">
+                    <span class="gallery-caption">Santa Barbara Coastline</span>
+                </div>
+            </div>
+            <div class="gallery-item" data-image="Images/IMG_Beach.JPEG" aria-label="Additional inn view">
+                <div class="gallery-image extra-gallery"></div>
+                <div class="gallery-overlay">
+                    <span class="gallery-caption">Just a step away from the Pacific Ocean!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Modal/Lightbox -->
+    <div id="gallery-modal" class="amenity-modal" role="dialog" aria-modal="true" aria-labelledby="gallery-modal-img" tabindex="-1">
+        <span class="amenity-modal-close" id="gallery-modal-close" tabindex="0" aria-label="Close image">&times;</span>
+        <img class="amenity-modal-img" id="gallery-modal-img" src="" alt="Gallery image enlarged for details" />
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Address:</strong> 931 E Cabrillo Blvd, Santa Barbara, CA 93103</p>
+                <p><strong>Phone:</strong> <a href="tel:8059661641">(805) 966-1641</a></p>
+                <p><strong>Email*:</strong> <a href="mailto:cabrilloinn@hotmail.com">cabrilloinn@hotmail.com</a></p>
+                <p>*We do not book rooms via Email</p>
+                <p><strong>Hours:</strong> Check-in: 4:00 PM | Check-out: 11:00 AM</p>
+                <a href="https://hotels.cloudbeds.com/reservation/cksufF#checkin=2025-07-10&checkout=2025-07-11" class="cta-button" target="_blank" rel="noopener">Book Now</a>
+            </div>
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps?q=931+E+Cabrillo+Blvd,+Santa+Barbara,+CA+93103&output=embed"
+                    width="100%" height="250" style="border:0; border-radius: 10px; margin-top: 1.5rem;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Map showing the location of Cabrillo Inn, 931 E Cabrillo Blvd, Santa Barbara, CA 93103">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Cabrillo Inn. All rights reserved. | <a href="terms.html" style="color: #ffd700; text-decoration: underline;">Terms of Service</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
